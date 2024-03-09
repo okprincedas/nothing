@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <style>
+  *{
+    padding:0px;
+    margin:0px
+  }
+  .user{
+    height:14vh;
+    width:16vw;
+    background-color:#90ee90;
+    border-radius:20%;
+   
+   
+   
+    
+  }
+  .user:active{
+    background-color:#007bff
+  }
+  #rock{
+    position:fixed;
+    right:14vw;
+    bottom:6vh
+  }
+  #paper{
+    position:fixed;
+    left:42vw;
+    bottom:6vh
+  }
+  #but{
+    display:flex;
+    
+  }
+  #scissor{
+    position:fixed;
+    bottom:6vh;
+    left:9vh
+  }
+  </style>
+  <meta name="Viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1,maximum-scale=1, user-scalable=no"
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Rock Paper Scisscor</title>
+</head>
+<body style="background-color:lavender">
+  <h1 style="font-size:1.6rem; text-align:center; color:#fa8d49;font-weight:900; margin">welcome  &nbsp To &nbsp Game &nbsp of Rock  &nbsp paper &nbsp scissor <br><p style="margin-top:0.3vh;text-align:center; font-family:italic"><b> Made &nbsp  By &nbsp Prince &nbsp</b></p> </h1>
+  <div style="display:flex; justify-content:center"> <input placeholder="Result" id="Result" style="background-color:lavender;width:100vw;height:6vh;border:none;margin-top:2.5vh; text-align:center;font-weight:900" type="text" readonly /></div>
+  <p id="computer" style="text-align:center; margin-top:5vh; height:5vh; font-weight:900">computer Choice Will Appear Here</p>
+  <div id="But"><button onclick=" compute = Math.random() * 3;if (compute <= 1){ document.querySelector(`#computer`).innerText = `Computer Has chosen  🪨`} else if(compute <= 2 && compute > 1){document.querySelector('#computer').innerText = 'computer Has Chosen ✂️ ' } else if(compute <=3 && compute >2){document.querySelector('#computer').innerText = `computer has chosen  📜`}; let compu = compute; if(compu <= 1){document.querySelector('#Result').value = 'Its A Tie'} else if(compu <= 2 && compu >1){document.querySelector('#Result').value = 'You Won'} else if(compu <= 3 && compu > 2){document.querySelector('#Result').value = 'You Lose'} " class="user" id="rock"> <img id="roc" style="height:13vh;width:12vw" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhACBhmtyafGcRz6xMul-gVvzMdVVpk3Rv70Gcu4JBAXkp8x2dnoq_CmcdixJZsHVRgVh6jo6glmbkd4AHrXBw8ShtnSV5zqa-otmt7HTz3Vo9l3h81zMoFmp61o276hOwvK2QbvumxqLczuIO8V7YV6vquWqztCwqLy39Z8dE6_n1rLARFfkmxjXLZmL8/s320-rw/vecteezy_rock-stones-and-boulders-in-cartoon-style_8853343.png"></button>
+    <button onclick="compute = Math.random() * 3;if (compute <= 1){ document.querySelector(`#computer`).innerText = `Computer Has chosen  🪨`} else if(compute <= 2 && compute > 1){document.querySelector('#computer').innerText = 'computer Has Chosen ✂️ ' } else if(compute <=3 && compute >2){document.querySelector('#computer').innerText = `computer has chosen  📜`} ; let compu = compute; if(compu <=1){document.querySelector('#Result').value = ' You Win'} else if(compu <=2 && compu > 1){document.querySelector('#Result').value = ' You Lose'} else if(compu <=3 && compu > 2){document.querySelector('#Result').value = 'Its A Tie'}  " class="user"id="paper"><img style="height:13vh; width:13vw" src="https://clipart-library.com/img/1244579.png"> </button>
+    <button onclick=" compute = Math.random() * 3;if (compute <= 1){ document.querySelector(`#computer`).innerText = `Computer Has chosen  🪨`} else if(compute <= 2 && compute > 1){document.querySelector('#computer').innerText = 'computer Has Chosen ✂️ ' } else if(compute <=3 && compute >2){document.querySelector('#computer').innerText = `computer has chosen  📜`} let vm = compute; if(vm <= 1){document.querySelector('#Result').value = 'You Lose'} else if(vm <= 2 && vm > 1){document.querySelector('#Result').value = 'its A Tie'} else if(vm <=3 && vm > 2){document.querySelector('#Result').value = 'You Won'}" class="user"id="scissor"><img style="height:12vh;width:15vw;" src="https://freepngimg.com/thumb/scissor/29126-6-cartoon-scissor.png"></button></div>
+  <script> 
+  let compute = Math.random() * 3
+  let result = 'if (compute === )';
+ 
+  </script></body>
+</html>
